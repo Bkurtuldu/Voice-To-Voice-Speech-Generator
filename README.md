@@ -25,4 +25,5 @@ In Windows Docker cannot directly access input output devices so it is quite har
 For any permisson related errors 
 
 1 => sudo usermod -aG docker $USER
+
 2 => newgrp docker

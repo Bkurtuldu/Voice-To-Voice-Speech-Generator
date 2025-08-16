@@ -1,0 +1,12 @@
+services:
+  voice-orchestrator:
+    build: .
+    env_file: .env
+    tty: true
+    stdin_open: true
+    devices:
+      - "/dev/snd:/dev/snd"
+    group_add:
+      - "audio"
+    volumes:
+      - ./data/logs:/app/data/logs

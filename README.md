@@ -21,3 +21,8 @@ AUDIODEV_INDEX and CHANNELS environment variables are needed to specify the reco
      print(sd.query_devices())
 
 In Windows Docker cannot directly access input output devices so it is quite hard to configure it with WSL, Linux is preferred in the context of Docker
+
+For any permisson related errors 
+
+1 => sudo usermod -aG docker $USER
+2 => newgrp docker

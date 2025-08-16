@@ -4,6 +4,5 @@ python-dotenv
 openai
 requests
 readchar
-# Optional SDKs (not strictly required by this implementation but kept per spec)
 deepgram-sdk
 elevenlabs
